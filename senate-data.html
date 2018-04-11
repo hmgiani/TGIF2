@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>TGIF</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<div class="row">
+  <div class="col-md-2">
+  <img src="/TASK/highres_456493137.jpeg" class="img-rounded" alt="LOGO TGIF">
+    </div>
+    <div class="col-md-4">
+      <h1>TGIF</h1>
+    </div>
+    </div>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+        <a class="navbar-brand" href="#">TGIF</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="home-page.html">Home</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Congres 113 <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="senate-data.html">Senate</a></li>
+              <li><a href="house-page.html">House</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Attendance <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="senate-data.html">Senate</a></li>
+              <li><a href="house-page.html">House</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Party Loyalty<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="senate-data.html">Senate</a></li>
+              <li><a href="house-page.html">House</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><span class="glyphicon glyphicon-envelope"></span>Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+    <div>
+    </div>
+  </header>
+  <!--Table container-->
+  
+  <div id="senate" class="container">
+    
+    <h2>Senators</h2>
+    <div>
+      <p>First convened in 1789, the composition and powers of the Senate are established in Article One of the U.S. Constitution. Each state is represented by two senators, regardless of population, who serve staggered six-year terms. The Senate has several exclusive powers not granted to the House, including consenting to treaties as a precondition to their ratification and consenting to or confirming appointments of Cabinet secretaries, federal judges, other federal executive officials, military officers, regulatory officials, ambassadors, and other federal uniformed officers, as well as trial of federal officials impeached by the House.</p>
+    </div>
+    </div>
+  
+  
+  <div class="filtro-senate">
+    <div>
+      <button onclick="unchekB()">None</button>
+      <input id="rep" type="checkbox" value="R" checked>R
+      <input id="dem" type="checkbox" value="D" checked>D
+      <input id="ind" type="checkbox" value="I" checked>I
+      <button onclick="chekB()">All</button>
+    </div>
+    <div>
+      <select id="dropbox">
+      </select>
+    </div>
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="Search" name="search">
+    </div>
+  </div>
+
+  <table class="table table-bordered">
+    <thead id="thead">
+      <tr>
+        <th>Name</th>
+        <th>Party</th>
+        <th>State</th>
+        <th>Years in Ofice</th>
+        <th>% Votes v/Party</th>
+      </tr>
+    </thead>
+    <tbody id="senate-data">
+    </tbody>
+  </table> 
+  <script src="pro-congress-113-senate.js"></script>
+  <script src="mainCon.js"></script>
+
+</body>
+
+</html>
